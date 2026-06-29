@@ -1,0 +1,24 @@
+[
+    {
+        "task_id": "066ce674",
+        "title": "Complete Smart Task Manager",
+        "description": "Build backend using Python OOP",
+        "priority": "High",
+        "category": "Project",
+        "due_date": "2026-07-05",
+        "estimated_hours": 4,
+        "status": "Pending",
+        "created_date": "2026-06-29T10:47:51.270790"
+    },
+    {
+        "task_id": "96978e5c",
+        "title": "Prepare README",
+        "description": "Write project documentation",
+        "priority": "Medium",
+        "category": "Documentation",
+        "due_date": "2026-07-10",
+        "estimated_hours": 2,
+        "status": "Pending",
+        "created_date": "2026-06-29T10:47:51.270814"
+    }
+]
