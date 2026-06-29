@@ -5,7 +5,7 @@
         "description": "Build backend using Python OOP",
         "priority": "High",
         "category": "Project",
-        "due_date": "2026-07-05",
+        "due_date": "2026-07-07",
         "estimated_hours": 4,
         "status": "Completed",
         "created_date": "2026-06-29T10:47:51.270790"
@@ -15,9 +15,9 @@
         "title": "Prepare README",
         "description": "Write project documentation",
         "priority": "Medium",
-        "category": "Documentation",
+        "category": "Other",
         "due_date": "2026-07-10",
-        "estimated_hours": 2,
+        "estimated_hours": 3,
         "status": "Pending",
         "created_date": "2026-06-29T10:47:51.270814"
     },
@@ -29,7 +29,7 @@
         "category": "Project",
         "due_date": "2026-07-15",
         "estimated_hours": 3,
-        "status": "Pending",
+        "status": "Completed",
         "created_date": "2026-06-29T10:52:05.077378"
     }
 ]

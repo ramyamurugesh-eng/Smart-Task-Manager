@@ -56,3 +56,30 @@ class TaskManager:
                 return True
 
         return False
+
+    def update_task(
+        self,
+        task_id: str,
+        title: str,
+        description: str,
+        priority: str,
+        category: str,
+        due_date,
+        estimated_hours: int,
+    ) -> bool:
+        """
+        Update an existing task.
+        """
+        for task in self.tasks:
+            if task.task_id == task_id:
+                task.title = title
+                task.description = description
+                task.priority = priority
+                task.category = category
+                task.due_date = due_date
+                task.estimated_hours = estimated_hours
+
+                self.storage.save_tasks(self.tasks)
+                return True
+
+        return False
