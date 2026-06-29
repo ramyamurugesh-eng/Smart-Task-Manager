@@ -7,7 +7,7 @@
         "category": "Project",
         "due_date": "2026-07-05",
         "estimated_hours": 4,
-        "status": "Pending",
+        "status": "Completed",
         "created_date": "2026-06-29T10:47:51.270790"
     },
     {
@@ -20,5 +20,16 @@
         "estimated_hours": 2,
         "status": "Pending",
         "created_date": "2026-06-29T10:47:51.270814"
+    },
+    {
+        "task_id": "f2dbfe1b",
+        "title": "Learn Streamlit",
+        "description": "Complete the Streamlit deployment",
+        "priority": "High",
+        "category": "Project",
+        "due_date": "2026-07-15",
+        "estimated_hours": 3,
+        "status": "Pending",
+        "created_date": "2026-06-29T10:52:05.077378"
     }
 ]

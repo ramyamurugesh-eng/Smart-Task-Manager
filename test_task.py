@@ -1,39 +1,35 @@
 from datetime import date
 
+from managers.task_manager import TaskManager
 from models.task import Task
-from services.storage import Storage
 
-# Create storage object
-storage = Storage()
+# Create TaskManager
+manager = TaskManager()
 
-# Create sample tasks
-task1 = Task(
-    title="Complete Smart Task Manager",
-    description="Build backend using Python OOP",
+# Create a new task
+task = Task(
+    title="Learn Streamlit",
+    description="Complete the Streamlit deployment",
     priority="High",
     category="Project",
-    due_date=date(2026, 7, 5),
-    estimated_hours=4,
+    due_date=date(2026, 7, 15),
+    estimated_hours=3,
 )
 
-task2 = Task(
-    title="Prepare README",
-    description="Write project documentation",
-    priority="Medium",
-    category="Documentation",
-    due_date=date(2026, 7, 10),
-    estimated_hours=2,
-)
+# Add task
+manager.add_task(task)
 
-# Save tasks
-storage.save_tasks([task1, task2])
+print("Current Tasks:\n")
 
-print("Tasks saved successfully!")
+# Display all tasks
+for task in manager.view_tasks():
+    print(task)
 
-# Load tasks
-loaded_tasks = storage.load_tasks()
+# Mark first task as completed
+first_task = manager.view_tasks()[0]
+manager.mark_task_completed(first_task.task_id)
 
-print("\nLoaded Tasks:\n")
+print("\nAfter Completing First Task:\n")
 
-for task in loaded_tasks:
+for task in manager.view_tasks():
     print(task)
